@@ -86,11 +86,21 @@
 
                 <div>
                     <h2 class="about__subtitle">I'am Suraj Mahapatra</h2>
-                    <p class="about__text">I'm an ambitious Computer Science & Engineering student at Nalanda Institute of Technology in Bhubaneswar, actively pursuing my BTech degree. Recently, I successfully completed a compelling project centered around an IoT-based soil testing kit, showcasing my proficiency in HTML, CSS, and Python.
+                    <p class="about__text">I'm an ambitious Computer Science & Engineering student at Nalanda Institute
+                        of Technology in Bhubaneswar, actively pursuing my BTech degree. Recently, I successfully
+                        completed a compelling project centered around an IoT-based soil testing kit, showcasing my
+                        proficiency in HTML, CSS, and Python.
 
-                        As I navigate the evolving tech landscape, my focus has shifted towards web development, particularly in the realm of Django and Python. Fueled by a passion for coding and problem-solving, I envision myself as a future Django developer. Beyond technical skills, I take pride in my effective communication and strong presentation abilities, cultivated through diverse academic and project collaborations.
-                        
-                        Currently interning at Startup Odisha for Startup Yatra, I am enthusiastic about contributing both my technical expertise and soft skills to the dynamic world of the IT industry. Excited about the journey ahead, I am eager to make meaningful contributions and continue growing in this ever-evolving field.</p>
+                        As I navigate the evolving tech landscape, my focus has shifted towards web development,
+                        particularly in the realm of Django and Python. Fueled by a passion for coding and
+                        problem-solving, I envision myself as a future Django developer. Beyond technical skills, I take
+                        pride in my effective communication and strong presentation abilities, cultivated through
+                        diverse academic and project collaborations.
+
+                        Currently interning at Startup Odisha for Startup Yatra, I am enthusiastic about contributing
+                        both my technical expertise and soft skills to the dynamic world of the IT industry. Excited
+                        about the journey ahead, I am eager to make meaningful contributions and continue growing in
+                        this ever-evolving field.</p>
                 </div>
                 <div>
                     <h2 class="about__subtitle"> My Projects</h2>
@@ -102,6 +112,14 @@
                         • <b>Video Downloader (YouTube, Instagram, Twitter):</b> Created an app with a user-friendly
                         interface,
                         wide format support, and offline access for flexible video consumption.<br>
+                        •<b>ToDo List (Django, HTML, CSS):</b> Developed a user-friendly SINGLE-USER ToDo app with
+                        seamless
+                        CRUD
+                        operations using Django and HTML/CSS.<br>
+                        •<b>E-commerce-clone (Django, HTML, CSS):</b> Developed a user-friendly MULTI-USER e-commerce
+                        app where
+                        user
+                        can Register/Login/Explore/Add-to-cart/Remove/Logout with flexible experience<br>
                         • <b>Soil Testing Kit (IoT):</b> Designed an instant soil nutrient measurement kit with
                         actionable
                         guidelines for better production.<br>
@@ -212,11 +230,12 @@
             <div class="contact__container bd-grid">
                 <form action="{% url 'index' %}" method="post" class="contact__form">
                     <center>
-                    {% csrf_token %}
-                    Name:<input type="text" name="Name" class="contact__input">
-                    Email:<input type="mail" name="Email" class="contact__input">
-                    Message:<textarea name="Description" cols="0" rows="5" class="contact__input"></textarea>
-                    <input type="submit" value="Submit" class="contact__button button"></center>
+                        {% csrf_token %}
+                        Name:<input type="text" name="Name" class="contact__input">
+                        Email:<input type="mail" name="Email" class="contact__input">
+                        Message:<textarea name="Description" cols="0" rows="5" class="contact__input"></textarea>
+                        <input type="submit" value="Submit" class="contact__button button">
+                    </center>
                 </form>
                 {% if messages %}
                 {% for msg in messages %}
@@ -226,9 +245,9 @@
                 {% endfor %}
                 {% endif %}
 
-<br><br>
+                <br><br>
                 <p><b>Address Information</b></p>
-                Chakradharpur, Jharkhand <br> <b>PIN-833103</b>
+                Chakradharpur, Jharkhand <br> <b>PIN-833102</b>
                 <b>Phone: 6207952542</b><b>Mail:</b>
                 <a href="mailto:surajmahapatra036@gmaiul.com">surajmahapatra036@gmail.com</a>
             </div>
@@ -242,8 +261,14 @@
             <!-- <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>  -->
             <a href="https://www.instagram.com/suraj_045__/" class="footer__icon"><i class='bx bxl-instagram'></i></a>
             <!-- <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a> -->
+
+            <p class="footer__copy">&#169; Perceptron Insights. All rigths reserved</p>
         </div>
-        <p class="footer__copy">&#169; Perceptron Insights. All rigths reserved</p>
+        <div class="admin">
+            <a class="admin" href="http://127.0.0.1:8000/admin/login/?next=/admin/" target="_blank" style="color: #ef3476; text-decoration: none; font-weight: bold;" >Admin Login</a>
+        </div>
+
+
     </footer>
 
 
@@ -251,7 +276,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!--===== MAIN JS =====-->
-    <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>

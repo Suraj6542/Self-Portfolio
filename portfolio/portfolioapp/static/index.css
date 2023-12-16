@@ -405,7 +405,16 @@ img {
 
 .footer__copy {
   font-size: var(--smaller-font-size);
+  display: inline-block;
+  margin-right: 20px;
 }
+
+.admin{
+  padding-left: 170%;
+  padding-right: 170%;
+  padding-top: 100px;
+}
+
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 320px) {
